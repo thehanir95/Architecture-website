@@ -36,4 +36,29 @@ html {
     font-weight: 500;
     color: #fff;
     width: 50%;
+    line-height: 9rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+.banner p{
+    font-family: 'Josefin Slab', serif;
+    font-size: 4rem;
+    color: #fff;
+    width: 70%;
+    letter-spacing: 0.4rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    margin-bottom: 3rem;
+}
+.banner button{
+    width: 25rem;
+    height: 7rem;
+    background-color: #c29525;
+    font-family: 'Mulish', serif;
+    border: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 }
