@@ -223,3 +223,11 @@ transform: scale(1);
 .social-media i:hover{
     background-color: #c29525;
 }
+
+.about-us{
+    width: 100%;
+    background-color: #f5f5f5;
+}
+.section-header{
+    display: flex;
+}
