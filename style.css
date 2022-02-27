@@ -254,6 +254,10 @@ transform: scale(1);
     grid-template-rows: repeat(6, 6rem);
     grid-row-gap: 4rem;
 }
+.service{
+    width: 100%;
+    margin-bottom: 2rem;
+}
 
 .service:nth-child(1){
     grid-column: 4/7;
