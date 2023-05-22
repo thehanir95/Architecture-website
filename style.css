@@ -315,3 +315,23 @@ transform: scale(1);
     font-family: 'Josefin Slab', serif;
     font-size: 1.6rem;
 }
+
+/*media queries(Small size)*/
+ @media screen and (max-width: 600px) {
+    .banner{
+        left: 10%;
+        top: 10%;
+    }
+
+    .banner h1{
+        font-size: 5rem;
+    }
+
+    .services{
+        display: unset;
+    }
+
+    .service{
+        padding-left: 40px;
+    }
+ }
