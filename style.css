@@ -11,22 +11,25 @@ html {
 }
 .header{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
     perspective: 100rem;
     overflow:hidden ;
 }
+.navbar{
+
+}
 .img-wrapper{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     background-color: rgba(0, 0, 0, 0.8);
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .img-wrapper img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     animation: scale 25s;
 }
 @keyframes scale{
@@ -171,13 +174,17 @@ transform: scale(1);
     right: 0;
 }
 .menu{
-    position: absolute;
+    /* position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); */
+    display: flex;
+    justify-content: end;
+    background: antiquewhite;
 }
 .menu-item{
     text-align: center;
+    padding: 10px;
 }
 .menu-link{
     font-family: 'Baloo Da 2', serif;
@@ -232,19 +239,19 @@ transform: scale(1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7rem 0 10rem 0;
+    padding: 7rem 0 7rem 0;
 }
 .section-heading{
    font-family: 'Mulish', serif;
    font-size: 5rem; 
    font-weight: 300;
    color: #4b4b4b;
-   margin-bottom: 6rem;
+   margin-bottom: 3rem;
 }
 .underline{
     width: 12rem;
     height: 0.3rem;
-    background-color: #c29525;
+    background-color: brown;
 }
 .services{
     width: 100%;
@@ -315,6 +322,94 @@ transform: scale(1);
     font-family: 'Josefin Slab', serif;
     font-size: 1.6rem;
 }
+/*contact us page*/
+.contact-us{
+    width: 100%;
+    display: flex;
+}
+.container.contact_container{
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+}
+
+.contact_options{
+    width: 50%;
+}
+
+.contact_option{
+    background: bisque;
+    padding: 20px;
+    margin: 0 10px 10px 10px;
+    font-family: 'Baloo Da 2', serif;
+    font-size: 16px;
+}
+
+.contact_option_content{
+    text-align: center;
+}
+
+/* .contact_option:hover{
+    background:#c29525;
+} */
+
+.contact_option-icon{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact_option a{
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/*form styles*/
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input, textarea{
+    width: 95%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background:transparent;
+    border: 2px solid brown;
+    resize: none;
+    color: var(--color-white);
+    margin-bottom: 5px;
+}
+.btn-contact-container{
+    display: flex;
+    justify-content: center;
+}
+.btn-contact{
+    background: green;
+    color: antiquewhite;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: 'Baloo Da 2', serif;
+    border: none;
+    padding: 5px;
+}
+/*media queries(Medium size)*/
+@media screen and (max-width: 1024px) {
+    .container.contact_container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/*media queries(Small size)*/
+@media screen and (max-width: 600px) {
+    .container.contact_container{
+        width: var(--container-width-sm);
+    }
+}
+
 
 /*media queries(Small size)*/
  @media screen and (max-width: 600px) {
